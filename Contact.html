@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Contact Us Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body{
+    background-image: url(./Assets/contact-background-1-1024x576.jpg);
+    }
+  h2{
+    color:blue;
+    padding-top: 35px;
+    font-family: cursive;
+  }
+  h3{
+    color:lightslategray;
+    font-family: cursive;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .container {
+    border-radius: 5px;
+    padding: 15px;
+    width:fit-content;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+  }
+  }
+</style>
+</head>
+<body>
+<div class="nav-bar">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="About.html">About</a>
+    <a class="nav-link" href="Contact.html">Contact</a>
+
+</div>
+  <div class="container">
+    <h2>Contact Information</h2>
+        <h3>+91 1223467890 <br> info@gmail.com <br> 123,Hyderabad,Telangana</h3>
+    
+        <form >
+          
+          <h2>Send us a Message..</h2>
+          <label for="name">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Email id</label>
+          <input type="text"  name="Email" placeholder="Your Email id..">
+          <label for="message">Type your message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    
+  <div id="footer">@Copyrights 2024 Aparna E</div>
+
+  </body>
+</html>
